@@ -2,12 +2,12 @@
   "stats": {
     "suites": 4,
     "tests": 6,
-    "passes": 6,
+    "passes": 5,
     "pending": 0,
-    "failures": 0,
-    "start": "2022-12-07T08:59:01.829Z",
-    "end": "2022-12-07T08:59:02.574Z",
-    "duration": 745
+    "failures": 1,
+    "start": "2023-01-06T12:48:14.242Z",
+    "end": "2023-01-06T12:48:14.592Z",
+    "duration": 350
   },
   "tests": [
     {
@@ -20,14 +20,14 @@
     {
       "title": "is defined as a const",
       "fullTitle": "index.js companyName is defined as a const",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "is declared as equal to Chelsea",
       "fullTitle": "index.js mostProfitableNeighborhood is declared as equal to Chelsea",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -43,7 +43,13 @@
       "fullTitle": "index.js companyCeo is declared as equal to Susan Smith",
       "duration": 1,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "message": "expected 'Susan Smit' to equal 'Susan Smith'",
+        "showDiff": true,
+        "actual": "Susan Smit",
+        "expected": "Susan Smith",
+        "stack": "AssertionError: expected 'Susan Smit' to equal 'Susan Smith'\n    at Context.<anonymous> (test/indexTest.js:29:29)\n    at process.processImmediate (node:internal/timers:471:21)"
+      }
     },
     {
       "title": "is defined using let",
@@ -54,7 +60,21 @@
     }
   ],
   "pending": [],
-  "failures": [],
+  "failures": [
+    {
+      "title": "is declared as equal to Susan Smith",
+      "fullTitle": "index.js companyCeo is declared as equal to Susan Smith",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected 'Susan Smit' to equal 'Susan Smith'",
+        "showDiff": true,
+        "actual": "Susan Smit",
+        "expected": "Susan Smith",
+        "stack": "AssertionError: expected 'Susan Smit' to equal 'Susan Smith'\n    at Context.<anonymous> (test/indexTest.js:29:29)\n    at process.processImmediate (node:internal/timers:471:21)"
+      }
+    }
+  ],
   "passes": [
     {
       "title": "is set as Scuber",
@@ -66,14 +86,14 @@
     {
       "title": "is defined as a const",
       "fullTitle": "index.js companyName is defined as a const",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "is declared as equal to Chelsea",
       "fullTitle": "index.js mostProfitableNeighborhood is declared as equal to Chelsea",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -81,13 +101,6 @@
       "title": "is defined using let",
       "fullTitle": "index.js mostProfitableNeighborhood is defined using let",
       "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "is declared as equal to Susan Smith",
-      "fullTitle": "index.js companyCeo is declared as equal to Susan Smith",
-      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
